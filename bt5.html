@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chuyển đổi nhiệt độ từ C sang F</title>
+</head>
+<body>
+    <script>
+        class Temperature{
+            c;
+            f;
+            Kenvin;
+            constructor(_c,_f,_Kenvin){
+                this.c=_c;
+                this.f=_f;
+                this.Kenvin=_Kenvin;
+            }
+            getDoc(){
+                return (this.f-32)/1.8;
+            }
+            getDof(){
+                return (this.c*1.8)+32;
+            }
+            getDokenvin(){
+                return (this.f*1.8);
+            }
+        }
+        let ChuyenDoiNhietDo= new Temperature(20,55,35);
+        let C =ChuyenDoiNhietDo.getDoc().toFixed(2);
+        let F =ChuyenDoiNhietDo.getDof();
+        let kenvin =ChuyenDoiNhietDo.getDokenvin();
+        console.log(C);
+        console.log(F);
+        console.log(kenvin);
+
+    </script>
+</body>
+</html>
